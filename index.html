@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CANS BUK – Christian Association of Nigerian Students</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<img src="logo.png" alt="CANS logo">
+<div><b>CANS BUK</b><small>Christian Association of Nigerian Students, Bayero University Kano</small></div>
+<nav><a href="#flyer">Flyer</a></nav>
+</header>
+
+<section class="hero">
+<h1>CANS WEEKEND 2026 is here,</h1>
+<p>Theme: <strong>THY KINGDOM COME</strong></p>
+<div class="meta">November 6–7, 2026 · 4PM daily · Musa Abdullahi Auditorium, BUK</div>
+</section>
+
+<main>
+<h2 class="post2" id="flyer">Create your ‘I WILL BE THERE’ flyer.</h2>
+<p class="sub">Add your photo and name, then download and share it.</p>
+
+<div class="maker">
+<div class="panel">
+<label for="name">Your name</label>
+<input type="text" id="name" maxlength="40" placeholder="Type your name" autocomplete="name">
+<label for="photo">Your picture</label>
+<input type="file" id="photo" accept="image/*">
+<label><span class="row">Zoom <span id="zv">100%</span></span></label>
+<input type="range" id="zoom" min="100" max="400" value="100">
+<label><span class="row">Move left / right <span id="xv">0</span></span></label>
+<input type="range" id="px" min="-100" max="100" value="0">
+<label><span class="row">Move up / down <span id="yv">0</span></span></label>
+<input type="range" id="py" min="-100" max="100" value="0">
+<button class="rs" id="reset" type="button">Reset position</button>
+<p class="hint">You can also drag the picture directly on the flyer.</p>
+<button class="dl" id="dl" type="button" disabled>Download flyer</button>
+<p class="msg" id="msg" role="status"></p>
+</div>
+<div class="stage"><canvas id="c" width="1725" height="2156" aria-label="Flyer preview"></canvas></div>
+</div>
+</main>
+<footer>© 2026 Christian Association of Nigerian Students, Bayero University Kano Chapter</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
